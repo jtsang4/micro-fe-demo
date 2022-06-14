@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@satumjs/core": "0.1.7-beta.0",
+    "@satumjs/midware-sandbox": "^0.0.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"

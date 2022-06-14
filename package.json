@@ -8,10 +8,9 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "start": "turbo run start --parallel",
+    "start": "turbo run start",
     "lint": "turbo run lint",
-    "prepare": "husky install",
-    "postinstall": "pnpm --filter child run build"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@jtsang/eslint-config": "^0.24.2",

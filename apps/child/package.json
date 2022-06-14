@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "start": "vite preview",
+    "start": "vite build && vite preview",
     "build": "vite build",
     "lint": "eslint . --cache --fix",
     "preview": "vite preview"

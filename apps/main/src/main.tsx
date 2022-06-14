@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Routes } from './routes'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('root-master')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes />

@@ -10,5 +10,5 @@ A demo project to validate micro front-end solution in Vite.
 
 ```bash
 pnpm i
-pnpm dev
+pnpm start
 ```
