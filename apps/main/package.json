@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint . --cache --fix",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
