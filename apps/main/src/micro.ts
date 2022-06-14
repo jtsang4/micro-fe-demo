@@ -7,7 +7,7 @@ import {
 import microCodeMidware from '@satumjs/midware-microcode'
 import sandboxMidware from '@satumjs/midware-sandbox'
 
-const MICRO_APP_CONTAINER = 'micro-app-container'
+export const MICRO_APP_CONTAINER = 'micro-app-container'
 
 register({
   name: 'child',
