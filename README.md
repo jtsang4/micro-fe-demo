@@ -12,3 +12,5 @@ A demo project to validate micro front-end solution in Vite.
 pnpm i
 pnpm start
 ```
+
+The visit `http://localhost:6001/micro-route/app`.
