@@ -24,7 +24,7 @@ register({
 use(imageUrlCompleteMidware)
 use(mountNodeMidware)
 use(microCodeMidware, { simple: true, proxyLocation: true })
-use(sandboxMidware) // Fix: enable sandbox
+use(sandboxMidware)
 use(interceptorMidware)
 
 start()
