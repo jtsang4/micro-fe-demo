@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@satumjs/core": "0.1.7-beta.0",
+    "@satumjs/midware-microcode": "^0.0.5",
     "@satumjs/midware-sandbox": "^0.0.5",
+    "@satumjs/simple-midwares": "^0.1.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
