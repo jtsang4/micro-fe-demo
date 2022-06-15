@@ -1,8 +1,9 @@
-import { HistoryType, register, start, use } from '@satumjs/core'
+import { HistoryType, register, start, use, fakeTagName } from '@satumjs/core'
 import {
   imageUrlCompleteMidware,
   interceptorMidware,
   mountNodeMidware,
+  simpleCssScopeMidware,
 } from '@satumjs/simple-midwares'
 import microCodeMidware from '@satumjs/midware-microcode'
 import sandboxMidware from '@satumjs/midware-sandbox'
@@ -21,6 +22,7 @@ register({
   },
 })
 
+use(simpleCssScopeMidware, { getScopeRule: () => fakeTagName })
 use(imageUrlCompleteMidware)
 use(mountNodeMidware)
 use(microCodeMidware, { simple: true, proxyLocation: true })
