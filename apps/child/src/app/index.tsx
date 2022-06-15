@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../logo.svg'
 import './index.css'
 
@@ -18,6 +19,7 @@ export function App() {
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
+        <Link to="/child">Go to child page</Link>
         <p>
           <a
             className="App-link"

@@ -1,4 +1,4 @@
-import { HistoryType, register, start, use, fakeTagName } from '@satumjs/core'
+import { HistoryType, fakeTagName, register, start, use } from '@satumjs/core'
 import {
   imageUrlCompleteMidware,
   interceptorMidware,
@@ -14,7 +14,10 @@ register({
   name: 'child',
   history: HistoryType.BROWSER,
   entry: 'http://localhost:4173/',
-  rules: { rule: '/micro-route/app', container: `#${MICRO_APP_CONTAINER}` },
+  rules: [
+    { rule: '/micro-route/app', container: `#${MICRO_APP_CONTAINER}` },
+    { rule: '/micro-route/child', container: `#${MICRO_APP_CONTAINER}` },
+  ],
   shareProps: {
     statics: {
       basename: '/micro-route',

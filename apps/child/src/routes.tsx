@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { Navigate, useRoutes } from 'react-router-dom'
 import type { RouteObject } from 'react-router-dom'
 import { App } from './app'
+import { ChildPage } from './child-page'
 
 export const Routes = () => {
   const routes = useMemo(() => {
@@ -13,6 +14,10 @@ export const Routes = () => {
       {
         path: '/app',
         element: <App />,
+      },
+      {
+        path: '/child',
+        element: <ChildPage />,
       },
     ] as RouteObject[]
   }, [])
